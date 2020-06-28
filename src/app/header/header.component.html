@@ -1,0 +1,57 @@
+<app-loader *ngIf="isDownloading"></app-loader>
+
+<!--Header Block-->
+<section #header
+    class="titleMod dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+    data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_4--after"
+        style="height: 100%; background-image: url(https://uploads.portfoliogen.com/photos/headerimages/21068_824A0347-5056-A84C-53FB0633DE04E6ED.jpg);">
+    </div>
+    <div class="container g-py-100 headerBlock">
+        <h3 class="text-uppercase mb-2 mb-2"
+            style="font-size: 2.85em; color: white;"><span id="portfolioTitle"
+                data-type="text" data-pk="0">Utkarsh Srivastava</span></h3>
+        <p class="g-font-weight-300 g-font-weight-300 text-uppercase"
+            style="font-size: 1.8em; color: white;"><span id="portfolioSubTitle"
+                data-type="text" data-pk="0">My
+                experiences made me who I am today and I am now helping
+                others</span></p>
+    </div>
+</section>
+<!--End Header Block-->
+
+<div class="container g-pt-20" #navbar>
+    <!--NavBar-->
+    <style>
+        .dropdown-item {
+            padding: 1rem 1.5rem;
+            width: auto;
+            border-left: #ffffff solid 3px;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(0, 0, 0, 0.1);
+            border-left: #8E8E8E solid 3px;
+        }
+
+        .dropdown-menu {
+            padding: 0;
+        }
+    </style>
+
+
+    <nav class="navbar navbar-expand-xl g-mb-20 menuLinks">
+
+        <div class="topnav">
+
+            <a [ngClass]="{active: router.url==='/resume'}"
+                [routerLink]="['/resume']">Resume</a>
+            <a [ngClass]="{active: router.url==='/about'}"
+                [routerLink]="['/about']">About me</a>
+            <a (click)="downloadResume()">Download Resume</a>
+
+        </div>
+
+    </nav>
+    <!--End NavBar-->
+</div>
