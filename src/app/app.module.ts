@@ -16,25 +16,25 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    ProfileComponent,
-    CertificationsComponent,
-    EducationComponent,
-    InterestsComponent,
-    FooterComponent,
-    ModalComponent,
-    ResumeComponent,
-    AboutComponent,
-    PageNotFoundComponent,
-    LoaderComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        ProfileComponent,
+        CertificationsComponent,
+        EducationComponent,
+        InterestsComponent,
+        FooterComponent,
+        ModalComponent,
+        ResumeComponent,
+        AboutComponent,
+        PageNotFoundComponent,
+        LoaderComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
