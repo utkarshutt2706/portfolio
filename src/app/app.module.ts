@@ -14,6 +14,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoaderComponent } from './loader/loader.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +31,10 @@ import { LoaderComponent } from './loader/loader.component';
         ResumeComponent,
         AboutComponent,
         PageNotFoundComponent,
-        LoaderComponent
+        LoaderComponent,
+        PrivacyComponent,
+        TermsComponent,
+        FaqComponent
     ],
     imports: [
         BrowserModule,

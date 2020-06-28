@@ -10,23 +10,23 @@
                 <ul class="u-list-inline">
 
                     <li class="list-inline-item">
-                        <a href="/about/privacy.cfm">Privacy Policy</a>
+                        <a [routerLink]="['/privacy']" (click)="backToTop()">Privacy Policy</a>
                     </li>
                     <li class="list-inline-item">
                         <span>|</span>
                     </li>
                     <li class="list-inline-item">
-                        <a href="/about/terms.cfm">Terms of Use</a>
+                        <a [routerLink]="['/terms']" (click)="backToTop()">Terms of Use</a>
                     </li>
                     <li class="list-inline-item">
                         <span>|</span>
                     </li>
                     <li class="list-inline-item">
-                        <a href="/about/help.cfm">FAQ's</a>
+                        <a [routerLink]="['/faq']" (click)="backToTop()">FAQ's</a>
                         <span>|</span>
                     </li>
                     <li class="list-inline-item">
-                        <a href="/contact.cfm">Support</a>
+                        <a href="/contact.cfm" (click)="backToTop()">Support</a>
                     </li>
                 </ul>
             </div>

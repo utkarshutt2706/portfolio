@@ -12,4 +12,11 @@ export class FooterComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    public backToTop() {
+        window.scroll({
+            behavior: 'smooth',
+            top: 0
+        });
+    }
+
 }

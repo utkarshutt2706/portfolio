@@ -4,6 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TermsComponent } from './terms/terms.component';
+import { FaqComponent } from './faq/faq.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
     {
@@ -18,6 +21,18 @@ const routes: Routes = [
     {
         path: 'resume',
         component: ResumeComponent
+    },
+    {
+        path: 'terms',
+        component: TermsComponent
+    },
+    {
+        path: 'faq',
+        component: FaqComponent
+    },
+    {
+        path: 'privacy',
+        component: PrivacyComponent
     },
     {
         path: '**',
