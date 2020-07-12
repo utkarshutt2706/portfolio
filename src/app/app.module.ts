@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SnotifyModule, ToastDefaults, SnotifyService } from 'ng-snotify';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,9 +43,17 @@ import { FaqComponent } from './faq/faq.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        SnotifyModule
     ],
-    providers: [],
+    providers: [
+        { provide: 'SnotifyToastConfig', useValue: ToastDefaults },
+        SnotifyService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

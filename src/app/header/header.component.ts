@@ -28,4 +28,13 @@ export class HeaderComponent implements OnInit {
         }, 1500);
     }
 
+    public scroll() {
+        if (window.innerWidth < 992) {
+            window.scroll({
+                behavior: 'smooth',
+                top: 1870
+            });
+        }
+    }
+
 }

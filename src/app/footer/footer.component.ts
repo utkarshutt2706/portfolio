@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-footer',
@@ -10,13 +10,21 @@ export class FooterComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
+        console.log(window);
     }
 
     public backToTop() {
-        window.scroll({
-            behavior: 'smooth',
-            top: 0
-        });
+        if (window.innerWidth >= 992) {
+            window.scroll({
+                behavior: 'smooth',
+                top: 470
+            });
+        }
     }
+
+    // @HostListener('window:scroll', ['$event'])
+    // doSomething(event) {
+    //   console.log('Scroll Event', window.pageYOffset );
+    // }
 
 }

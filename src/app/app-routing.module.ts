@@ -11,7 +11,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'resume',
+        redirectTo: 'about',
         pathMatch: 'full'
     },
     {

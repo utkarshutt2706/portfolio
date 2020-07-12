@@ -44,10 +44,10 @@
 
         <div class="topnav">
 
-            <a [ngClass]="{active: router.url==='/resume'}"
-                [routerLink]="['/resume']">Resume</a>
             <a [ngClass]="{active: router.url==='/about'}"
-                [routerLink]="['/about']">About me</a>
+                [routerLink]="['/about']" (click)="scroll()">About me</a>
+            <a [ngClass]="{active: router.url==='/resume'}"
+                [routerLink]="['/resume']" (click)="scroll()">Resume</a>
             <a (click)="downloadResume()">Download Resume</a>
 
         </div>

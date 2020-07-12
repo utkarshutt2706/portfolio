@@ -12,7 +12,7 @@
 
             <div class="modal-body">
 
-                <div class="g-mb-10" style="margin-top: 10px;">
+                <!-- <div class="g-mb-10" style="margin-top: 10px;">
                     <a
                         href="mailto:utkarshutt2706@gmail.com">Click to send me an email @ utkarshutt2706@gmail.com</a>&nbsp;&nbsp;
                 </div>
@@ -20,7 +20,51 @@
                 <div class="g-mb-10">
                     <a
                         href="tel:+919935744820">Click to call me @ 9935744820</a>&nbsp;&nbsp;
+                </div> -->
+
+                <div class="g-mb-10">
+                    Email: <a
+                        href="mailto:utkarshutt2706@gmail.com">utkarshutt2706@gmail.com</a>&nbsp;&nbsp;
+                    Phone: <a href="tel:+919935744820">+91-9935744820</a>
                 </div>
+                <form [formGroup]="contactForm" (ngSubmit)="onSend()">
+
+                    <input type="email" required placeholder="Your email"
+                        name="emailAddress" formControlName="email"
+                        style="margin-bottom:5px; padding-left:10px;"
+                        class="form-control input-md col-sm-12">
+                    <p *ngIf="contactForm.controls.email.touched &&
+                        (contactForm.controls.email.hasError('email') ||
+                        contactForm.controls.email.hasError('pattern'))"
+                        style="color: red; font-size: 10px;">
+                        Please enter a valid email</p>
+                    <p *ngIf="contactForm.controls.email.touched &&
+                        contactForm.controls.email.hasError('required')"
+                        style="color: red; font-size: 10px;">
+                        Email is required</p>
+
+                    <input name="subject" required placeholder="Subject"
+                        formControlName="subject"
+                        style="margin-bottom:5px; padding-left:10px;"
+                        class="form-control input-md col-sm-12" type="text">
+                    <p *ngIf="contactForm.controls.subject.touched &&
+                        contactForm.controls.subject.hasError('required')"
+                        style="color: red; font-size: 10px;">
+                        Subject is required</p>
+
+                    <textarea NAME="message" wrap="physical" maxlength="700"
+                        formControlName="message" rows="4"
+                        placeholder="Your message here..." required
+                        class="form-control input-md col-xs-12"></textarea>
+                    <p *ngIf="contactForm.controls.message.touched &&
+                        contactForm.controls.message.hasError('required')"
+                        style="color: red; font-size: 10px;">
+                        Message is required</p>
+
+                    <div align="right"><button type="submit"
+                            style="margin-top:5px;" name="sendmessage"
+                            class="btn u-btn-blue">Send</button></div>
+                </form>
 
             </div>
 

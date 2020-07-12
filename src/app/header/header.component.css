@@ -1,7 +1,9 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    /* background-color: #333; */
-    overflow: hidden;
+  /* background-color: #333; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Style the links inside the navigation bar */
@@ -46,4 +48,10 @@ a:after {
 }
 a:hover:after {
   transform: scaleX(1);
+}
+
+@media (max-width: 500px) {
+  .topnav {
+    flex-direction: column;
+  }
 }
