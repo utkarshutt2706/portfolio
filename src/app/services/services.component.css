@@ -1,0 +1,26 @@
+.offer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+}
+
+.mat-card-image {
+  width: calc(100% + 28px);
+}
+
+.top-margin {
+  margin-top: 10px;
+}
+
+.image {
+  height: 400px;
+}
+
+@media (max-width: 767px) {
+  .offer {
+    flex-direction: column;
+  }
+}

@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TermsComponent } from './terms/terms.component';
 import { FaqComponent } from './faq/faq.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
     {
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
         path: 'resume',
         component: ResumeComponent
+    },
+    {
+        path: 'services',
+        component: ServicesComponent
     },
     {
         path: 'terms',

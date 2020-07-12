@@ -23,6 +23,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { FaqComponent } from './faq/faq.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import { FaqComponent } from './faq/faq.component';
         LoaderComponent,
         PrivacyComponent,
         TermsComponent,
-        FaqComponent
+        FaqComponent,
+        ServicesComponent
     ],
     imports: [
         BrowserModule,

@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
+    public isPrinting = false;
+
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    public downloadResume() {
+        this.isPrinting = true;
+        setTimeout(() => {
+            window.print();
+            this.isPrinting = false;
+        }, 500);
     }
 
 }

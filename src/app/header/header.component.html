@@ -1,5 +1,3 @@
-<app-loader *ngIf="isDownloading"></app-loader>
-
 <!--Header Block-->
 <section #header
     class="titleMod dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
@@ -46,9 +44,10 @@
 
             <a [ngClass]="{active: router.url==='/about'}"
                 [routerLink]="['/about']" (click)="scroll()">About me</a>
+            <a [ngClass]="{active: router.url==='/services'}"
+                [routerLink]="['/services']" (click)="scroll()">Services</a>
             <a [ngClass]="{active: router.url==='/resume'}"
                 [routerLink]="['/resume']" (click)="scroll()">Resume</a>
-            <a (click)="downloadResume()">Download Resume</a>
 
         </div>
 
