@@ -51,8 +51,7 @@ export class ModalComponent implements OnInit {
             'I am still trying to implement this feature without exposing an actual server. Sorry for the inconvinience!',
             { timeout: 4000, showProgressBar: false }
         );
-        // alert('');
-        // alert('');
+        this.contactForm.reset();
         // const formData = this.contactForm.getRawValue();
         // Email.send({
         //     Host: 'smtp.gmail.com',

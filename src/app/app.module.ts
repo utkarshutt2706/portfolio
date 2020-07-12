@@ -4,6 +4,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 import { SnotifyModule, ToastDefaults, SnotifyService } from 'ng-snotify';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -48,6 +49,7 @@ import { FaqComponent } from './faq/faq.component';
         BrowserAnimationsModule,
         MatFormFieldModule,
         MatInputModule,
+        MatCardModule,
         SnotifyModule
     ],
     providers: [
